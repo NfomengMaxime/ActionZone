@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App name -->
+    <string name="app_name">ActionZone</string>
+
+    <!-- Splash screen -->
+    <string name="splash_nom">ACTION\nZONE</string>
+    <string name="splash_officiel">OFFICIAL</string>
+    <string name="splash_slogan">Your action movies collection</string>
+
+    <!-- My Collection screen -->
+    <string name="collection_titre"> My Action Collection</string>
+    <string name="collection_vide">Your collection is empty!\nSearch for action movies </string>
+    <string name="menu_parametres">Settings</string>
+    <string name="fab_description">Search a movie</string>
+
+    <!-- Search screen -->
+    <string name="recherche_titre">Search a movie</string>
+    <string name="recherche_hint">Type a movie title, actor...</string>
+    <string name="recherche_aucun_resultat">No movie found.</string>
+    <string name="recherche_erreur_reseau">Network error. Check your connection.</string>
+    <string name="recherche_erreur_api">Set your TMDB API key in Settings!</string>
+
+    <!-- Detail screen -->
+    <string name="detail_titre">Movie detail</string>
+    <string name="detail_note_tmdb">TMDB Rating :  %1$.1f / 10</string>
+    <string name="detail_date_sortie">Release date : %1$s</string>
+    <string name="detail_synopsis">Synopsis</string>
+    <string name="detail_section_perso">My personal section </string>
+    <string name="detail_statut_label">Status :</string>
+    <string name="detail_note_label">My rating out of 5 :</string>
+    <string name="detail_avis_label">My review :</string>
+    <string name="detail_avis_hint">Write your review...</string>
+    <string name="detail_date_visionnage_label">Watch date :</string>
+    <string name="detail_date_aucune">No date chosen</string>
+    <string name="detail_bouton_date">Choose a date </string>
+    <string name="detail_bouton_ajouter">Add to my collection </string>
+    <string name="detail_deja_collection">Already in your collection </string>
+    <string name="detail_ajoute_succes">%1$s added to your collection! </string>
+    <string name="detail_erreur_ajout">Error while adding</string>
+    <string name="detail_affiche_description">Movie poster</string>
+
+    <!-- Statuses -->
+    <string-array name="statuts">
+        <item>to watch</item>
+        <item>watching</item>
+        <item>watched</item>
+    </string-array>
+
+    <!-- Collection context menu -->
+    <string name="menu_modifier_statut">Change status</string>
+    <string name="menu_supprimer">Remove from collection</string>
+    <string name="statut_mis_a_jour">Status updated </string>
+    <string name="film_supprime">Movie removed </string>
+    <string name="confirmer_suppression">Delete</string>
+    <string name="confirmer_suppression_msg">Remove %1$s from your collection?</string>
+    <string name="annuler">Cancel</string>
+    <string name="changer_statut">Change status</string>
+
+    <!-- Settings screen -->
+    <string name="parametres_titre">Settings</string>
+    <string name="parametres_thematique">Theme : Action Movies </string>
+    <string name="parametres_nom_label">Your name :</string>
+    <string name="parametres_nom_hint">Enter your name...</string>
+    <string name="parametres_api_label">TMDB API Key :</string>
+    <string name="parametres_api_hint">Enter your API key...</string>
+    <string name="parametres_api_info">Create an account on themoviedb.org to get your key</string>
+    <string name="parametres_notifications">Notifications</string>
+    <string name="parametres_sauvegarder">Save </string>
+    <string name="parametres_sauvegarde_ok">Settings saved </string>
+    <string name="parametres_erreur_nom">Enter your name!</string>
+    <string name="parametres_erreur_api">Enter your TMDB API key!</string>
+
+    <!-- General messages -->
+    <string name="erreur_json">JSON parsing error</string>
+    <string name="tape_titre">Type a movie title!</string>
+</resources>

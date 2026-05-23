@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_action">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarRecherche"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#CC141420"
+        app:titleTextColor="@color/colorTextPrimary"
+        app:title="@string/recherche_titre" />
+
+    <EditText
+        android:id="@+id/editTextRecherche"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:hint="@string/recherche_hint"
+        android:textColor="@color/colorTextPrimary"
+        android:textColorHint="@color/colorTextSecondary"
+        android:background="@drawable/bg_edittext"
+        android:padding="14dp"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:singleLine="true" />
+
+    <ProgressBar
+        android:id="@+id/progressBarRecherche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:indeterminateTint="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/textAucunResultat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/recherche_aucun_resultat"
+        android:textColor="@color/colorTextSecondary"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewResultats"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:clipToPadding="false" />
+
+</LinearLayout>

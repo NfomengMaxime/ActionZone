@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        layer-list : permet de superposer plusieurs couches de dessin
+        Chaque item est une couche — la dernière est au-dessus
+        C'est comme des calques dans Photoshop
+    -->
+
+    <!-- Couche 1 : fond noir profond -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#0A0A0F" />
+        </shape>
+    </item>
+
+    <!-- Couche 2 : dégradé diagonal rouge sang vers transparent -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:angle="135"
+                android:startColor="#99CC0000"
+                android:centerColor="#44880000"
+                android:endColor="#00000000" />
+        </shape>
+    </item>
+
+    <!--
+        gradient : dégradé de couleur
+        type="linear" : dégradé en ligne droite
+        angle="135" : direction diagonale
+        startColor : couleur de départ — rouge avec 99 de transparence
+        centerColor : milieu — rouge foncé semi-transparent
+        endColor : fin — totalement transparent
+        Les deux premiers chiffres d'une couleur #AARRGGBB = transparence
+        00 = invisible, FF = opaque, 99 = environ 60% opaque
+    -->
+
+    <!-- Couche 3 : dégradé en bas pour effet profondeur -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:angle="270"
+                android:startColor="#00000000"
+                android:endColor="#DD000000" />
+        </shape>
+    </item>
+
+    <!-- Couche 4 : ligne diagonale style action en haut à gauche -->
+    <item
+        android:top="0dp"
+        android:bottom="700dp"
+        android:right="500dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#22FF0000" />
+            <corners android:radius="2dp" />
+        </shape>
+    </item>
+
+</layer-list>

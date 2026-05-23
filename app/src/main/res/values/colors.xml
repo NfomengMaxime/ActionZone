@@ -1,5 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+
+    <!--
+        Nouvelle palette ActionZone — style action intense
+        Rouge sang + noir profond + orange feu = ambiance thriller/action
+    -->
+
+    <!-- Rouge sang : couleur principale — boutons, titres, éléments importants -->
+    <color name="colorPrimary">#CC0000</color>
+
+    <!-- Rouge très foncé : barre de statut en haut du téléphone -->
+    <color name="colorPrimaryDark">#8B0000</color>
+
+    <!-- Orange feu : accentuation — étoiles, éléments interactifs -->
+    <color name="colorAccent">#FF4500</color>
+
+    <!-- Noir profond : fond principal de l'app -->
+    <color name="colorBackground">#0A0A0F</color>
+
+    <!-- Noir charbon : fond des cartes -->
+    <color name="colorSurface">#141420</color>
+
+    <!-- Noir bleuté : fond secondaire -->
+    <color name="colorSurfaceSecondary">#1E1E35</color>
+
+    <!-- Blanc pur : texte principal -->
+    <color name="colorTextPrimary">#FFFFFF</color>
+
+    <!-- Gris clair : texte secondaire -->
+    <color name="colorTextSecondary">#AAAAAA</color>
+
+    <!-- Rouge vif : étoiles, notes, éléments mis en valeur -->
+    <color name="colorAccentRed">#CC0000</color>
+
+    <!-- Blanc transparent : séparateurs -->
+    <color name="colorDivider">#33FFFFFF</color>
+
+    <!-- Orange feu : pour les notes TMDB -->
+    <color name="colorOrange">#FF4500</color>
+
 </resources>

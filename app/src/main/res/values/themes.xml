@@ -1,9 +1,38 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.ActionZone" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+    <!--
+        Thème principal ActionZone — style action intense
+        On hérite de Theme.MaterialComponents.DayNight.NoActionBar
+        directement ici pour éviter le conflit de double ActionBar
+        qu'on avait avant
+    -->
+    <style name="Theme.ActionZone" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!-- Rouge sang : couleur principale -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+        <!-- Rouge foncé : status bar -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <!-- Orange feu : accentuation -->
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- Fond noir profond pour toute l'app -->
+        <item name="android:windowBackground">@color/colorBackground</item>
+
+        <!-- Status bar noire -->
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+
     </style>
 
-    <style name="Theme.ActionZone" parent="Base.Theme.ActionZone" />
+    <!--
+        Thème NoActionBar : maintenant identique au thème principal
+        car on a mis NoActionBar directement dans le parent
+        On le garde pour la compatibilité avec le Manifest
+    -->
+    <style name="Theme.ActionZone.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
 </resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--
+        Item de menu : bouton Paramètres
+        android:id : identifiant qu'on utilise dans onOptionsItemSelected pour détecter le clic
+        android:title : texte affiché dans le menu
+        android:icon : icône engrenage fournie par Android
+        app:showAsAction="never" : toujours caché dans le menu déroulant (les 3 points)
+        Si on mettait "ifRoom", il apparaîtrait directement dans la Toolbar si la place le permet
+    -->
+    <item
+        android:id="@+id/action_parametres"
+        android:title="Paramètres"
+        android:icon="@android:drawable/ic_menu_preferences"
+        app:showAsAction="never" />
+
+</menu>

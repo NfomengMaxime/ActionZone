@@ -1,3 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Nom de l'application -->
     <string name="app_name">ActionZone</string>
+
+    <!-- Écran Splash -->
+    <string name="splash_nom">ACTION\nZONE</string>
+    <string name="splash_officiel">OFFICIEL</string>
+    <string name="splash_slogan">Ta collection de films d\'action</string>
+
+    <!-- Écran Ma Collection -->
+    <string name="collection_titre"> Ma Collection Action</string>
+    <string name="collection_vide">Ta collection est vide !\nRecherche des films d\'action 💥</string>
+    <string name="menu_parametres">Paramètres</string>
+    <string name="fab_description">Rechercher un film</string>
+
+    <!-- Écran Recherche -->
+    <string name="recherche_titre">Rechercher un film</string>
+    <string name="recherche_hint">Tape le titre d\'un film, acteur...</string>
+    <string name="recherche_aucun_resultat">Aucun film trouvé.</string>
+    <string name="recherche_erreur_reseau">Erreur réseau. Vérifie ta connexion.</string>
+    <string name="recherche_erreur_api">Configure ta clé API TMDB dans les Paramètres !</string>
+
+    <!-- Écran Détail -->
+    <string name="detail_titre">Détail du film</string>
+    <string name="detail_note_tmdb">Note TMDB :  %1$.1f / 10</string>
+    <string name="detail_date_sortie">Date de sortie : %1$s</string>
+    <string name="detail_synopsis">Synopsis</string>
+    <string name="detail_section_perso">Ma section personnelle </string>
+    <string name="detail_statut_label">Statut :</string>
+    <string name="detail_note_label">Ma note sur 5 :</string>
+    <string name="detail_avis_label">Mon avis :</string>
+    <string name="detail_avis_hint">Écris ton avis sur ce film...</string>
+    <string name="detail_date_visionnage_label">Date de visionnage :</string>
+    <string name="detail_date_aucune">Aucune date choisie</string>
+    <string name="detail_bouton_date">Choisir une date </string>
+    <string name="detail_bouton_ajouter">Ajouter à ma collection </string>
+    <string name="detail_deja_collection">Déjà dans ta collection </string>
+    <string name="detail_ajoute_succes">%1$s ajouté à ta collection ! </string>
+    <string name="detail_erreur_ajout">Erreur lors de l\'ajout</string>
+    <string name="detail_affiche_description">Affiche du film</string>
+
+    <!-- Statuts -->
+    <string-array name="statuts">
+        <item>à voir</item>
+        <item>en cours</item>
+        <item>vu</item>
+    </string-array>
+
+    <!-- Menu contextuel collection -->
+    <string name="menu_modifier_statut">Modifier le statut</string>
+    <string name="menu_supprimer">Supprimer de la collection</string>
+    <string name="statut_mis_a_jour">Statut mis à jour </string>
+    <string name="film_supprime">Film supprimé </string>
+    <string name="confirmer_suppression">Supprimer</string>
+    <string name="confirmer_suppression_msg">Supprimer %1$s de ta collection ?</string>
+    <string name="annuler">Annuler</string>
+    <string name="changer_statut">Changer le statut</string>
+
+    <!-- Écran Paramètres -->
+    <string name="parametres_titre">Paramètres</string>
+    <string name="parametres_thematique">Thématique : Films d\'Action </string>
+    <string name="parametres_nom_label">Ton nom :</string>
+    <string name="parametres_nom_hint">Entre ton nom...</string>
+    <string name="parametres_api_label">Clé API TMDB :</string>
+    <string name="parametres_api_hint">Entre ta clé API...</string>
+    <string name="parametres_api_info">Crée un compte sur themoviedb.org pour obtenir ta clé</string>
+    <string name="parametres_notifications">Notifications</string>
+    <string name="parametres_sauvegarder">Sauvegarder </string>
+    <string name="parametres_sauvegarde_ok">Paramètres sauvegardés </string>
+    <string name="parametres_erreur_nom">Entre ton nom !</string>
+    <string name="parametres_erreur_api">Entre ta clé API TMDB !</string>
+
+    <!-- Messages généraux -->
+    <string name="erreur_json">Erreur de parsing JSON</string>
+    <string name="tape_titre">Tape un titre de film !</string>
 </resources>

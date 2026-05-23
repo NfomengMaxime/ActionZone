@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_action">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarDetail"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#CC141420"
+            app:titleTextColor="@color/colorTextPrimary"
+            app:title="@string/detail_titre" />
+
+        <ImageView
+            android:id="@+id/imageAfficheDetail"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/affiche_defaut"
+            android:contentDescription="@string/detail_affiche_description" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textTitreDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Titre"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textNoteTmdbDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Note TMDB"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textDateSortieDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Date de sortie"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/colorDivider" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_synopsis"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textSynopsisDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Synopsis"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/colorDivider" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_section_perso"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/detail_statut_label"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/spinnerStatut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/detail_note_label"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="14sp" />
+
+            <RatingBar
+                android:id="@+id/ratingBarPerso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:numStars="5"
+                android:stepSize="0.5"
+                android:rating="0"
+                android:progressTint="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/detail_avis_label"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editTextAvis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:hint="@string/detail_avis_hint"
+                android:textColor="@color/colorTextPrimary"
+                android:textColorHint="@color/colorTextSecondary"
+                android:background="@drawable/bg_edittext"
+                android:padding="12dp"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:gravity="top" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/detail_date_visionnage_label"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textDateVisionnage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/detail_date_aucune"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/buttonDateVisionnage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/detail_bouton_date"
+                android:backgroundTint="@color/colorSurfaceSecondary"
+                android:textColor="@color/colorTextPrimary" />
+
+            <Button
+                android:id="@+id/buttonAjouter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="24dp"
+                android:text="@string/detail_bouton_ajouter"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="16sp"
+                android:padding="12dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
